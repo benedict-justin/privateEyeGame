@@ -11,9 +11,10 @@ import java.io.Serializable;
  *
  * @author Justin
  */
-import java.util.Objects;/**
+import java.util.Objects;
+/**
  *
- * @author Justin
+ *
  */
 public class Player implements Serializable{
     

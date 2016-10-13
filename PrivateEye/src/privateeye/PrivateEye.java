@@ -20,25 +20,6 @@ public class PrivateEye {
      */
     public static void main(String[] args) {
         
-        //clears screen and moves cursor to top left
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
-        
-        //intro banner
-        System.out.println("This is...");
-        for(int i=1; i<12; i++){
-              System.out.println("\n");
-              
-              //pauses consoles for .25 sec.       
-              try {
-                  Thread.sleep(250);
-              } 
-              catch(InterruptedException ex) {
-                  Thread.currentThread().interrupt();
-              }
-        }
-        System.out.println("Private Eye\n");
-        
         Player playerOne = new Player();
         
         playerOne.setName("Fred Flinstone");

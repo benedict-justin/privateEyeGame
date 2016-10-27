@@ -2,12 +2,17 @@ package privateeye;
 
 
 import byui.cit260.privateEye.model.Player;
+import byui.cit260.privateEye.model.Character;
+import byui.cit260.privateEye.model.Game;
+import byui.cit260.privateEye.model.Inventory;
+import byui.cit260.privateEye.model.Items;
+import byui.cit260.privateEye.model.Location;
+import byui.cit260.privateEye.model.Swamp;
+import byui.cit260.privateEye.model.Scene;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+import java.util.Scanner;
+
+
 
 /**
  *
@@ -15,17 +20,29 @@ import byui.cit260.privateEye.model.Player;
  */
 public class PrivateEye {
 
+    
+    private static Game currentGame = null;
+    private static Player player = null;
+
+    public static Game getCurrentGame() {
+        return currentGame;
+    }
+
+    public static void setCurrentGame(Game currentGame) {
+        PrivateEye.currentGame = currentGame;
+    }
+
+    public static Player getPlayer() {
+        return player;
+    }
+
+    public static void setPlayer(Player player) {
+        PrivateEye.player = player;
+}
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        
-        Player playerOne = new Player();
-        
-        playerOne.setName("Fred Flinstone");
-        
-        String playerInfo = playerOne.toString();
-        System.out.println(playerInfo);
+    public static void main(String[] args) {  
         
     }
     

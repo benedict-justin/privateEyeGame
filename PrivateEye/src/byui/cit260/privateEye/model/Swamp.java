@@ -90,6 +90,11 @@ public class Swamp implements Serializable{
         return true;
     }
 
+    @Override
+    public String toString() {
+        return "Swamp{" + "description=" + description + ", width=" + width + ", length=" + length + '}';
+    }
+
     
     
     
